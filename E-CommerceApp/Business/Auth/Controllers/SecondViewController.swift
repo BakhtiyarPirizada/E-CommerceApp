@@ -67,7 +67,7 @@ class SecondViewController: BaseViewController {
         super.configureConstraints()
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 174),
-            imageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant:45),
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             imageView.widthAnchor.constraint(equalToConstant: 300),
             imageView.heightAnchor.constraint(equalToConstant: 178)
         ])

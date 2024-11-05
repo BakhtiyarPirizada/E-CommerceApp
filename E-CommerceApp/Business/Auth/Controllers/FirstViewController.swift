@@ -12,7 +12,6 @@ class FirstViewController: BaseViewController {
     private lazy var imageView: UIImageView = {
         let i = UIImageView()
         i.image = .scene1
-        i.isUserInteractionEnabled = true
         i.translatesAutoresizingMaskIntoConstraints = false
         return i
     }()
@@ -40,7 +39,7 @@ class FirstViewController: BaseViewController {
     
     fileprivate func gestureRecognizer() {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showSecondScene))
-        imageView.addGestureRecognizer(gestureRecognizer)
+        view.addGestureRecognizer(gestureRecognizer)
     }
     
     @objc fileprivate func showSecondScene() {
