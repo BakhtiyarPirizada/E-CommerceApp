@@ -178,6 +178,7 @@ class LoginViewController: BaseViewController {
         view.addSubview(rememberLabel)
         view.addSubview(rememberButton)
         view.addSubview(nextButton)
+        view.addSubview(newMemberLabel)
     }
     override func configureConstraints() {
         super.configureConstraints()
@@ -230,6 +231,11 @@ class LoginViewController: BaseViewController {
             nextButton.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -20),
             nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -68),
             nextButton.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.06)
+            
+        ])
+        NSLayoutConstraint.activate([
+            newMemberLabel.topAnchor.constraint(equalTo: nextButton.bottomAnchor,constant: 14),
+            newMemberLabel.centerXAnchor.constraint(equalToSystemSpacingAfter: view.centerXAnchor, multiplier: 0)
         ])
     }
 
