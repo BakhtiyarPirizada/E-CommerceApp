@@ -30,10 +30,10 @@ class FirstViewController: BaseViewController {
     override func configureConstraints() {
         super.configureConstraints()
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 191),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 245),
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 224),
-            imageView.heightAnchor.constraint(equalToConstant: 216)
+            imageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.57) ,
+            imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25)
         ])
     }
     

@@ -68,12 +68,12 @@ class FourthViewController: BaseViewController {
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 174),
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 300),
-            imageView.heightAnchor.constraint(equalToConstant: 263)
+            imageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.76),
+            imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.31)
         ])
         NSLayoutConstraint.activate([
-            nextImage.widthAnchor.constraint(equalToConstant: 50),
-            nextImage.heightAnchor.constraint(equalToConstant: 50),
+            nextImage.widthAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.059),
+            nextImage.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.059),
             nextImage.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -58),
             nextImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -66)
         ])
@@ -86,14 +86,14 @@ class FourthViewController: BaseViewController {
         NSLayoutConstraint.activate([
             titleLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -183),
             titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant:10),
-            titleLabel.widthAnchor.constraint(equalToConstant: 270),
-            titleLabel.heightAnchor.constraint(equalToConstant: 90)
+            titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.69),
+            titleLabel.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1)
         ])
         NSLayoutConstraint.activate([
             subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 0),
             subTitleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant:10),
-            subTitleLabel.widthAnchor.constraint(equalToConstant: 250),
-            subTitleLabel.heightAnchor.constraint(equalToConstant: 33)
+            subTitleLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.64),
+            subTitleLabel.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.039)
         ])
         
     }
