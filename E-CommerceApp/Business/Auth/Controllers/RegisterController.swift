@@ -150,7 +150,7 @@ class RegisterController: BaseViewController {
     }()
     @objc
     fileprivate func nextButtonClicked() {
-        let vc = LoginViewController()
+        let vc = HomeViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
     fileprivate func gestureRecognizer(to view: UIView, action: Selector) {
@@ -202,7 +202,7 @@ class RegisterController: BaseViewController {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: imageView.topAnchor, constant: 138),
             titleLabel.leftAnchor.constraint(equalTo: imageView.leftAnchor, constant:28),
-            titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.43),
+            titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
             titleLabel.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.035)
         ])
         NSLayoutConstraint.activate([
@@ -213,7 +213,7 @@ class RegisterController: BaseViewController {
         ])
        
         NSLayoutConstraint.activate([
-            nameText.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 36),
+            nameText.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor, constant: 22),
             nameText.leftAnchor.constraint(equalTo: view.leftAnchor, constant:20),
             nameText.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20) ,
             nameText.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.059)
